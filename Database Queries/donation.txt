@@ -1,0 +1,13 @@
+
+CREATE TABLE donations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    organization_id INT NOT NULL,
+    donor_name VARCHAR(100) NOT NULL,
+    donor_email VARCHAR(100) NOT NULL,
+    donor_phone VARCHAR(15) NOT NULL,
+    amount DECIMAL(10, 2) NOT NULL,
+    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    screenshot VARCHAR(255),
+    FOREIGN KEY (organization_id) REFERENCES organizations(id)
+);
+Select * from donations;

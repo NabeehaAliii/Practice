@@ -1,0 +1,35 @@
+Use volunteer_network;
+
+-- Create the organizations table
+CREATE TABLE organizations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    org_id VARCHAR(100) NOT NULL,
+    location VARCHAR(255) NOT NULL,
+    country VARCHAR(100) NOT NULL,
+    contact VARCHAR(100) NOT NULL,
+    mission TEXT NOT NULL
+);
+
+-- Insert data into the organizations table
+INSERT INTO organizations (name, org_id, location, country, contact, mission) VALUES
+('Edhi Foundation', 'ORG001', 'Karachi', 'Pakistan', 'contact@edhi.org', 'Providing humanitarian services including shelter, food, and medical care.'),
+('Aman Foundation', 'ORG002', 'Karachi', 'Pakistan', 'info@amanfoundation.org', 'Improving health and education standards in Pakistan.'),
+('Shaukat Khanum Memorial Cancer Hospital', 'ORG003', 'Lahore', 'Pakistan', 'info@shaukatkhanum.org.pk', 'Providing comprehensive cancer care.'),
+('Saylani Welfare International Trust', 'ORG004', 'Karachi', 'Pakistan', 'contact@saylaniwelfare.com', 'Providing food, education, and health services.'),
+('Aurat Foundation', 'ORG005', 'Islamabad', 'Pakistan', 'info@af.org.pk', 'Empowering women and promoting gender equality.'),
+('Transparent Hands', 'ORG006', 'Lahore', 'Pakistan', 'info@transparenthands.org', 'Providing free healthcare services to the underprivileged.'),
+('Chhipa Welfare Association', 'ORG007', 'Karachi', 'Pakistan', 'info@chhipa.org', 'Providing ambulance and emergency services.'),
+('Indus Hospital', 'ORG008', 'Karachi', 'Pakistan', 'info@indushospital.org.pk', 'Providing quality healthcare services free of cost.'),
+('The Citizens Foundation', 'ORG009', 'Karachi', 'Pakistan', 'info@tcf.org.pk', 'Providing quality education to underprivileged children.'),
+('Akhuwat Foundation', 'ORG010', 'Lahore', 'Pakistan', 'info@akhuwat.org.pk', 'Providing interest-free microfinance to alleviate poverty.'),
+('Dar-ul-Sukun', 'ORG011', 'Karachi', 'Pakistan', 'info@darulsukun.com', 'Providing care and shelter for the mentally and physically challenged.'),
+('SOS Children’s Village', 'ORG012', 'Lahore', 'Pakistan', 'info@sos.org.pk', 'Providing homes and support for orphaned children.'),
+('Behbud Association', 'ORG013', 'Islamabad', 'Pakistan', 'info@behbud.org', 'Improving the lives of women and children through education and health.'),
+('Aangan Trust', 'ORG014', 'Karachi', 'Pakistan', 'info@aangantrust.org', 'Preventing child abuse and exploitation.'),
+('Rizq', 'ORG015', 'Lahore', 'Pakistan', 'info@rizq.org.pk', 'Ending hunger by redistributing surplus food.'),
+('Al-Khidmat Foundation', 'ORG016', 'Karachi', 'Pakistan', 'info@alkhidmat.org', 'Providing humanitarian services including healthcare and disaster relief.'),
+('Tameer-e-Millat Foundation', 'ORG017', 'Islamabad', 'Pakistan', 'info@tameeremillat.org', 'Promoting education and healthcare in rural areas.'),
+('Hashoo Foundation', 'ORG018', 'Islamabad', 'Pakistan', 'info@hashoofoundation.org', 'Promoting economic development and social progress.'),
+('Diya Pakistan', 'ORG019', 'Lahore', 'Pakistan', 'info@diyapak.org', 'Providing scholarships and educational support to underprivileged students.'),
+('Sahara for Life Trust', 'ORG020', 'Lahore', 'Pakistan', 'info@saharaforlife.org', 'Providing healthcare, education, and disaster relief services.');
